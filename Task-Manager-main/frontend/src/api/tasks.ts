@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { Task } from '../types/Task';
 
-const API_URL = 'http://localhost:8080/api/tasks';
+const API_URL = 'https://task-manager-challenge.onrender.com/api/tasks';
 
 export const getTasks = async () => (await axios.get<Task[]>(API_URL)).data;
 
