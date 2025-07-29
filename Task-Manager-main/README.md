@@ -1,8 +1,8 @@
-# 📝 Task Manager
+#  Task Manager
 
 A full stack containerized Task Manager application built with **Spring Boot**, **React**, and **Docker**, featuring task CRUD operations, status updates, and a clean UI.
 
-## 🚀 Features
+##  Features
 
 ### Backend
 - Create, read, update, and delete tasks
@@ -16,13 +16,13 @@ A full stack containerized Task Manager application built with **Spring Boot**, 
 - Task status updates
 - Form validation
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Backend**: Java 17, Spring Boot, H2 Database
 - **Frontend**: React, TypeScript, Vite, Material UI
 - **Testing**: JUnit, Mockito
 - **Containerization**: Docker, Docker Compose
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Using Docker (Recommended)
 ```bash
@@ -45,7 +45,7 @@ npm install
 npm run dev
 ```
 
-## 🔗 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -56,14 +56,14 @@ npm run dev
 | PATCH  | /api/tasks/{id}/status | Update status |
 | DELETE | /api/tasks/{id} | Delete task |
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 cd backend
 ./mvnw test
 ```
 
-## 📦 Database
+##  Database
 
 Uses H2 in-memory database for development and testing:
 - Console: http://localhost:8080/h2-console
