@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: task-backend
+    ports:
+      - "8080:8080"
+    networks:
+      - task-network
+
+  frontend:
+    build: ./frontend
+    container_name: task-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - task-network
+
+networks:
+  task-network:
+    driver: bridge
